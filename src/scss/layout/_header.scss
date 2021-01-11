@@ -10,10 +10,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover {
+      background-color: $orange;
+    }
 
     &__link {
       padding: 15px;
-      transition: all ease 1s;
+      transition: all ease 0.8s;
 
       &:hover {
         transform: scale(1.5);
