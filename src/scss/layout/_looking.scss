@@ -1,0 +1,75 @@
+.looking {
+  padding: 30px 15px 45px 15px;
+  @include tablet {
+    padding: 30px 39px 60px 39px;
+  }
+  @include desktop {
+    padding: 60px 275px 60px 275px;
+  }
+  &__tips {
+    line-height: 1.875rem;
+    color: $lightblue;
+    font-size: $small;
+    font-family: $regular;
+    padding-top: 5.625rem;
+
+    @include tablet {
+      font-size: 1rem;
+      padding-top: 1.875rem;
+    }
+  }
+  &__title {
+    @include title {
+      text-align: left;
+      font-weight: 700;
+      font-size: $large;
+      text-transform: capitalize;
+      margin-bottom: 15px;
+    }
+    @include tablet {
+      font-size: 1.625rem;
+      line-height: 2.813rem;
+    }
+    @include desktop {
+      font-size: 2rem;
+    }
+  }
+  &__text {
+    @mixin text {
+      text-align: justify;
+      color: $grey;
+    }
+
+    @include tablet {
+      @include textMedia {
+      }
+    }
+  }
+  &__buttom {
+    width: 76px;
+    height: 45px;
+    border: 2px solid $orange;
+    background-color: $white;
+    border-radius: 22.5px;
+    margin-top: 30px;
+    transition: background-color ease 0.5s;
+    @include tablet {
+      width: 91px;
+    }
+    @include desktop {
+      width: 160px;
+    }
+    &:hover {
+      background-color: $menuBlue;
+    }
+
+    &--link {
+      display: block;
+      color: $orange;
+      font-size: $medium;
+      line-height: 2.813rem;
+      text-align: center;
+      padding: 0.625rem;
+    }
+  }
+}
