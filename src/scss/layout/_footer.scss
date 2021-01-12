@@ -1,43 +1,48 @@
 .footer {
   background-color: $darkBlue;
-}
-.fWrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  font-family: $regular;
-  @include tablet {
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: left;
-    align-items: flex-start;
-  }
-  @include desktop {
-    margin: 0 350px;
-  }
 
   &__buttom {
-    width: $tall;
-    height: $tall;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    background-color: $white;
+    background-color: white;
+    border: 2px solid cyan;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     transform: translate(0, -50%);
     margin: auto;
-
     &--link {
       color: orangered;
       font-size: $medium;
     }
   }
+}
+.fWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: $regular;
+  padding: 37.5px 0 45px 0;
+  @include tablet {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 40px 0 40px;
+  }
+  @include desktop {
+    margin: 0 370px;
+  }
   &__menu,
   &__rrss {
+    width: 160px;
     margin-bottom: 30px;
+    @include tablet {
+      text-align: left;
+      padding: 0 15px;
+    }
   }
 }
 .fLink {
@@ -45,38 +50,35 @@
   color: $white;
   line-height: 1.875rem;
 }
-.fa-heart {
-  color: $orange;
-  font-size: 0.625rem;
-}
 
-.heart {
+.copy {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  color: $white;
+  width: 160px;
   font-family: $regular;
   @include tablet {
-    flex-direction: row;
-    justify-content: space-around;
     text-align: left;
-    align-items: flex-start;
-  }
-  @include desktop {
-    margin: 0 350px;
-  }
-}
-.copy {
-  margin-bottom: $tall;
-  color: $white;
-  order: 1;
-  @include tablet {
+    @include desktop {
+      padding: 0 15px;
+    }
+
+    order: 1;
+
     order: 0;
   }
+
   &__date,
-  .love {
+  &__love {
     display: block;
     font-size: 0.875rem;
     line-height: 1.875rem;
+
+    .fa-heart {
+      color: $orange;
+      font-size: 0.625rem;
+    }
   }
 }
