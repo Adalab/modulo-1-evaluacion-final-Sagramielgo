@@ -9,6 +9,12 @@
     @content;
   }
 }
+
+@mixin textMedia {
+  font-size: $medium;
+  @content;
+}
+
 @mixin title {
   font-family: $slab;
   line-height: 1.875rem;
@@ -19,9 +25,5 @@
   font-family: $regular;
   font-size: 1.125rem;
   line-height: 1.875rem;
-  @content;
-}
-@mixin textMedia {
-  font-size: $medium;
   @content;
 }
