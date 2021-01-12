@@ -1,43 +1,48 @@
-<footer>
+<footer class="footer">
     <div class="fWrapper">
-        <div class="Footer__buttom">
-            <a href="#top" class="foote__buttom--link" title="go down"><img src="./assets/images/" alt="go up" />
+        <div class="fWrapper__buttom">
+            <a href="#top" class="fWrapper__buttom--link" title="go down"><img src="./assets/images/" alt="go top" />
             </a>
         </div>
-        <small> 2021 we love components</small>
 
-        <nav>
-            <ul>
-                <li>
-                    books
-                </li>
-                <li>
-                    events
-                </li>
-                <li>
-                    reasons
-                </li>
-                <li>
-                    tips
-                </li>
-            </ul>
-        </nav>
-        <nav>
+        <div class="fWrapper__container">
+            <div class="copy">
+                <small class="copy__year"> &copy;2021 </small>
+                <span class="love">we
+                    <i class="fa fa-heart" title="heart"></i>
+                    components</span>
+            </div>
+            <nav class="fWrapper__menu">
+                <ul>
+                    <include src="./link.html" way="articles"></include>
 
-            <ul>
-                <li>
-                    twitter
-                </li>
-                <li>
-                    instagram
-                </li>
-                <li>
-                    mastodon.social
-                </li>
-            </ul>
-        </nav>
+                    <li>
+                        <a href="https://www.adalab.es" title="Go to books" target="_blank">books</a>
+                    </li>
+                    <li>
+                        <a href="https://www.adalab.es" title="Go to events" target="_blank">events</a>
+                    </li>
+                    <li>
+                        <a href="https://www.adalab.es" title="Go to reasons" target="_blank">reasons</a>
+                    </li>
+                    <li>
+                        <a href="https://www.adalab.es" title="Go to tips" target="_blank">tips</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="footer__social-media">
+                <ul>
+                    <li>
+                        <a href="https://www.adalab.es" title="Go to Twitter" target="_blank">twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.adalab.es" title="Go to Instagram" target="_blank">instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.adalab.es" title="Go to Mastodon.social"
+                            target="_blank">mastodon.social</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 </footer>
-
-</body>
-
-</html>
