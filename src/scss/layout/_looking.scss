@@ -35,7 +35,7 @@
     }
   }
   &__text {
-    @mixin text {
+    @include text {
       text-align: justify;
       color: $grey;
     }
@@ -52,24 +52,41 @@
     background-color: $white;
     border-radius: 22.5px;
     margin-top: 30px;
-    transition: background-color ease 0.5s;
+    transition: all ease 0.5s;
+    animation-name: bigger;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+
     @include tablet {
       width: 91px;
     }
     @include desktop {
       width: 160px;
     }
+    @keyframes bigger {
+      from {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+
+      90% {
+        transform: scale(1);
+      }
+    }
     &:hover {
-      background-color: $menuBlue;
+      background-color: rgb(151, 183, 211);
     }
 
     &--link {
       display: block;
       color: $orange;
+      font-family: $regular;
       font-size: $medium;
+      font-weight: 500;
       line-height: 2.813rem;
       text-align: center;
-      padding: 0.625rem;
     }
   }
 }
