@@ -1,18 +1,20 @@
 .footer {
+  width: 100vw;
   background-color: $darkBlue;
+  position: relative;
 
   &__buttom {
     width: 45px;
     height: 45px;
     border-radius: 50%;
     background-color: white;
-    border: 2px solid cyan;
+    box-shadow: $shadow2;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    transform: translate(0, -50%);
-    margin: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
     &--link {
       color: orangered;
       font-size: $medium;
@@ -20,14 +22,14 @@
   }
 }
 .fWrapper {
+  padding: 60px 0 45px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   font-family: $regular;
-  padding: 37.5px 0 45px 0;
   @include tablet {
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     margin: 0 40px 0 40px;
@@ -35,50 +37,50 @@
   @include desktop {
     margin: 0 370px;
   }
-  &__menu,
+  &__menu {
+    width: 160px;
+    margin-bottom: 30px;
+    @include tablet {
+      text-align: left;
+      order: 2;
+    }
+  }
   &__rrss {
     width: 160px;
     margin-bottom: 30px;
     @include tablet {
       text-align: left;
-      padding: 0 15px;
+      order: 3;
     }
   }
-}
-.fLink {
-  text-transform: uppercase;
-  color: $white;
-  line-height: 1.875rem;
-}
-
-.copy {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: $white;
-  width: 160px;
-  font-family: $regular;
-  @include tablet {
-    text-align: left;
-    @include desktop {
-      padding: 0 15px;
-    }
-
-    order: 1;
-
-    order: 0;
-  }
-
-  &__date,
-  &__love {
-    display: block;
-    font-size: 0.875rem;
+  .fLink {
+    text-transform: uppercase;
+    color: $white;
     line-height: 1.875rem;
+  }
 
-    .fa-heart {
-      color: $orange;
-      font-size: 0.625rem;
+  .copy {
+    width: 160px;
+    color: $white;
+    font-family: $regular;
+    @include tablet {
+      order: 1;
+      justify-items: left;
+    }
+
+    &__date,
+    &__love {
+      display: block;
+      font-size: 0.875rem;
+      line-height: 1.875rem;
+      @include tablet {
+        text-align: left;
+      }
+
+      .fa-heart {
+        color: $orange;
+        font-size: 0.625rem;
+      }
     }
   }
 }

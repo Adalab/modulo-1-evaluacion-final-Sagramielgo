@@ -1,3 +1,10 @@
+#reasons3 {
+  scroll-margin-top: 1.2rem;
+  @include tablet {
+    scroll-margin-top: 1.8rem;
+  }
+}
+
 .reasons {
   width: 100%;
   background-color: $iceBlue;
@@ -51,7 +58,6 @@
     height: 45px;
     border-radius: 22.5px;
     background-color: $orange;
-
     grid-column-start: 2;
     grid-column-end: 3;
     justify-self: center;
