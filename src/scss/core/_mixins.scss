@@ -28,3 +28,18 @@
   }
   @content;
 }
+
+@mixin buttom {
+  width: 2.813rem;
+  height: 2.813rem;
+  background-color: $white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @content;
+}
+@mixin link {
+  padding: 0.938rem;
+  @content;
+}

@@ -4,20 +4,15 @@
   position: relative;
 
   &__buttom {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: white;
-    box-shadow: $shadow2;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    &--link {
-      color: orangered;
-      font-size: $medium;
+    @include buttom {
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 2px 4px $shadow2;
+
+      &--link {
+        @include link;
+      }
     }
   }
 }

@@ -47,32 +47,27 @@
     }
   }
   &__buttom {
-    width: 2.813rem;
-    height: 2.813rem;
-    background-color: $white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5px;
-    margin-top: 2.813rem;
-    margin-bottom: 3.313rem;
-    position: relative;
-    animation-name: flux;
-    animation-duration: 3s;
-    transition: all ease 0.8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    @include buttom {
+      padding-top: 5px;
+      margin-top: 2.813rem;
+      margin-bottom: 3.313rem;
 
-    @include tablet {
-      margin-bottom: 2.813rem;
-    }
-    @include desktop {
-      margin-bottom: 0.813rem;
-    }
+      animation-name: flux;
+      animation-duration: 3s;
+      transition: all ease 0.8s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      position: relative;
 
-    &--link {
-      padding: 10px;
+      @include tablet {
+        margin-bottom: 2.813rem;
+      }
+      @include desktop {
+        margin-bottom: 0.813rem;
+      }
+      &--link {
+        @include link;
+      }
     }
     &:hover {
       border: 3px solid $orange;
