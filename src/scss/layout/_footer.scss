@@ -3,6 +3,20 @@
 }
 .fWrapper {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: $regular;
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    align-items: flex-start;
+  }
+  @include desktop {
+    margin: 0 350px;
+  }
 
   &__buttom {
     width: $tall;
@@ -20,26 +34,23 @@
       color: orangered;
       font-size: $medium;
     }
-
-    &__menu {
-      margin-bottom: 30px;
-      &--fLink {
-        text-transform: uppercase;
-        color: $white;
-        line-height: 1.875rem;
-      }
-    }
-    &__rrss {
-      margin-bottom: 30px;
-    }
   }
-
-  .fa-heart {
-    color: $orange;
-    font-size: 0.625rem;
+  &__menu,
+  &__rrss {
+    margin-bottom: 30px;
   }
 }
-&__heart {
+.fLink {
+  text-transform: uppercase;
+  color: $white;
+  line-height: 1.875rem;
+}
+.fa-heart {
+  color: $orange;
+  font-size: 0.625rem;
+}
+
+.heart {
   display: flex;
   flex-direction: column;
   align-items: center;
