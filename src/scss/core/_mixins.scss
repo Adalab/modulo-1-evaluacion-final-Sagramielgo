@@ -49,3 +49,11 @@
   padding: 0.938rem;
   @content;
 }
+@mixin nav {
+  width: 10rem;
+  margin-bottom: $short;
+  @include tablet {
+    text-align: left;
+    @content;
+  }
+}

@@ -8,7 +8,7 @@
 .reasons {
   width: 100%;
   background-color: $iceBlue;
-  padding: 30px 15px 30px 15px;
+  padding: $short 15px $short 15px;
   display: grid;
   grid-template-columns: repeat (3, 1fr);
 
@@ -18,7 +18,7 @@
   &__title {
     @include title {
       font-size: 1.5rem;
-      margin-bottom: 45px;
+      margin-bottom: $tall;
       grid-column: span 3;
     }
     @include tablet {
@@ -36,18 +36,20 @@
     padding: 0 53px 0 53px;
     @include tablet {
       grid-column: span 1;
-      padding: 0 1.125rem 0 1.125rem;
+      padding: 0 $medium 0 $medium;
     }
 
     &__title {
       @include title {
-        font-size: 1.125rem;
+        font-size: $medium;
+        &::first-letter {
+          text-transform: capitalize;
+        }
       }
     }
-
     &__text {
       @include text {
-        margin-bottom: 45px;
+        margin-bottom: $tall;
         padding: 0;
       }
     }
