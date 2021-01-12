@@ -6,7 +6,7 @@
   grid-template-columns: repeat (3, 1fr);
 
   @include tablet {
-    padding: 30px 85px 30px 85px;
+    padding: $short 5.313rem $short 5.313rem;
   }
   &__title {
     @include title {
@@ -27,26 +27,20 @@
     grid-column: span 3;
     text-align: center;
     padding: 0 53px 0 53px;
-    @media all and (min-width: 768px) {
+    @include tablet {
       grid-column: span 1;
-      padding: 0 17.85px 0 17.85px;
+      padding: 0 1.125rem 0 1.125rem;
     }
 
     &__title {
       @include title {
         font-size: 1.125rem;
       }
-      @media all and (min-width: 768px) {
-        font-size: 1.5rem;
-      }
     }
 
     &__text {
-      font-size: 1.125rem;
-      line-height: 1.875rem;
-      margin-bottom: 45px;
-      @media all and (min-width: 768px) {
-        font-size: 1.25rem;
+      @include text {
+        margin-bottom: 45px;
         padding: 0;
       }
     }
@@ -57,28 +51,32 @@
     height: 45px;
     border-radius: 22.5px;
     background-color: $orange;
-    color: $white;
+
     grid-column-start: 2;
     grid-column-end: 3;
-    /*  align-self: center; */
     justify-self: center;
-    margin-bottom: 30px;
+    margin-bottom: $short;
     transition: background-color ease 0.5s;
-    @media all and (min-width: 768px) {
-      width: 210px;
+    @include tablet {
+      width: 13.125rem;
     }
-    @media all and (min-width: 1200px) {
-      width: 255px;
+    @include desktop {
+      width: 15.938rem;
     }
     &:hover {
-      color: $orange;
       background-color: $white;
+      border: 2px solid $orange;
     }
     &--link {
-      font-size: 1.25rem;
-      line-height: 2.5rem;
+      font-size: $medium;
+      line-height: $tall;
+      font-family: $regular;
+      color: $white;
       text-align: center;
       display: block;
+      &:hover {
+        color: $orange;
+      }
     }
   }
 }

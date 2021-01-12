@@ -39,11 +39,6 @@
       text-align: justify;
       color: $grey;
     }
-
-    @include tablet {
-      @include textMedia {
-      }
-    }
   }
   &__buttom {
     width: 76px;

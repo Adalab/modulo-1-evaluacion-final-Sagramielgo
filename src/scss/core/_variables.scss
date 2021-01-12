@@ -15,10 +15,15 @@ $menuBlue: #0271bc;
 $lightBlue: #8ccbea;
 $iceBlue: #eff9ff;
 $white: #ffffff;
+$shadow1: rgba(0, 0, 0, 0.2);
+$shadow2: rgba(0, 0, 0, 0.5);
 
 $regular: "Roboto", sans-serif;
 $slab: "Roboto Slab", serif;
 
-$large: 24px;
-$medium: 20px;
-$small: 14px;
+$large: 1.5rem; /* 24px; */
+$medium: 1.25rem; /* 20px; */
+$small: 0.875rem; /* 14px; */
+
+$tall: 2.813rem; /* 45px */
+$short: 1.875rem; /* 30px */

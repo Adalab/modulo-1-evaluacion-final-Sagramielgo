@@ -9,21 +9,22 @@
     @content;
   }
 }
-
-@mixin textMedia {
-  font-size: $medium;
-  @content;
-}
-
 @mixin title {
   font-family: $slab;
   line-height: 1.875rem;
   text-align: center;
+  @include tablet {
+    font-size: 1.5rem;
+  }
   @content;
 }
+
 @mixin text {
   font-family: $regular;
   font-size: 1.125rem;
   line-height: 1.875rem;
+  @include tablet {
+    font-size: $medium;
+  }
   @content;
 }
