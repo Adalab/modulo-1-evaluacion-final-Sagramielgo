@@ -16,6 +16,7 @@
     }
   }
 }
+
 .fWrapper {
   padding: 60px 0 45px 0;
   display: flex;
@@ -77,5 +78,22 @@
         font-size: 0.625rem;
       }
     }
+  }
+}
+@keyframes flux {
+  0% {
+    box-shadow: 0 0 4px rgba(white, 0.5);
+    top: 1em;
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(white, 0.5);
+    top: -0.5em;
+  }
+  85% {
+    box-shadow: 0 0 30px rgba(white, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 4px rgba(white, 0.25);
+    top: 1em;
   }
 }

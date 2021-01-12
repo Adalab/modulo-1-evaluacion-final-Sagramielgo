@@ -37,8 +37,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation-name: flux;
+  animation-duration: 3s;
+  transition: all ease 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
   @content;
 }
+
 @mixin link {
   padding: 0.938rem;
   @content;

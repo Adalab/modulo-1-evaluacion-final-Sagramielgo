@@ -51,12 +51,6 @@
       padding-top: 5px;
       margin-top: 2.813rem;
       margin-bottom: 3.313rem;
-
-      animation-name: flux;
-      animation-duration: 3s;
-      transition: all ease 0.8s;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
       position: relative;
 
       @include tablet {
