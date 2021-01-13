@@ -8,7 +8,9 @@
 .reasons {
   width: 100%;
   background-color: $iceBlue;
-  padding: $short 15px $short 15px;
+
+.gridWrapper{
+  padding: $short 70px 60 70px;
   display: grid;
   grid-template-columns: repeat (3, 1fr);
 

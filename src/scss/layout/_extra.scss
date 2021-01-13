@@ -1,0 +1,53 @@
+.headerPage {
+  width: 100vw;
+  background-color: pink;
+}
+.wrapPage {
+  width: 70%;
+  margin: auto;
+  padding: $tall $tall;
+  @include tablet {
+    width: 50%;
+  }
+  &__titlePage {
+    font-family: $regular;
+    color: purple;
+    padding-bottom: 1rem;
+  }
+  &__text {
+    @include text {
+      color: purple;
+      padding-bottom: 1em;
+    }
+  }
+}
+
+.buttom {
+  width: 5rem;
+  border-radius: 30%;
+  background-color: fuchsia;
+  border: 2px solid white;
+  margin: 0 10% 0 80%;
+
+  transition: background-color ease 0.5s;
+}
+.buttom:hover {
+  background-color: $white;
+  border: 2px solid fuchsia;
+}
+.linky {
+  font-size: $medium;
+  line-height: $tall;
+  font-family: $regular;
+  color: $white;
+  text-align: center;
+  display: block;
+}
+.linky:hover {
+  color: fuchsia;
+}
+.titleForm {
+  color: purple;
+  font-family: $regular;
+  margin: 5% 30% 0 30%;
+}
