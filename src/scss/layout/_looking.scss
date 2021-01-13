@@ -1,5 +1,6 @@
 .looking {
-  padding: 30px 15px 45px 15px;
+  width: 100vw;
+  padding: $short 15px $tall 15px;
   @include tablet {
     padding: 30px 39px 60px 39px;
   }

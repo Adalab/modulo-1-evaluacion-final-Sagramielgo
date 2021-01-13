@@ -8,9 +8,11 @@
 .reasons {
   width: 100%;
   background-color: $iceBlue;
+}
 
-.gridWrapper{
-  padding: $short 70px 60 70px;
+.gridWrapper {
+  width: 100vw;
+  padding: $short 4.375rem 60 4.375rem;
   display: grid;
   grid-template-columns: repeat (3, 1fr);
 
@@ -20,7 +22,8 @@
   &__title {
     @include title {
       font-size: 1.5rem;
-      margin-bottom: $tall;
+      padding-top: $short;
+      padding-bottom: $tall;
       grid-column: span 3;
     }
     @include tablet {
@@ -35,10 +38,9 @@
   .article {
     grid-column: span 3;
     text-align: center;
-    padding: 0 53px 0 53px;
+    padding: 0 4.375rem $tall 4.375rem;
     @include tablet {
       grid-column: span 1;
-      padding: 0 $medium 0 $medium;
     }
 
     &__title {
@@ -51,7 +53,6 @@
     }
     &__text {
       @include text {
-        margin-bottom: $tall;
         padding: 0;
       }
     }
@@ -65,7 +66,7 @@
     grid-column-start: 2;
     grid-column-end: 3;
     justify-self: center;
-    margin-bottom: $short;
+    margin-bottom: 60px;
     transition: background-color ease 0.5s;
     @include tablet {
       width: 13.125rem;
