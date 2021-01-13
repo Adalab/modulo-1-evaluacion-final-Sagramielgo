@@ -1,4 +1,5 @@
 #reasons3 {
+  width: 100%;
   scroll-margin-top: 1.2rem;
   @include tablet {
     scroll-margin-top: 1.8rem;
@@ -11,18 +12,19 @@
 }
 
 .gridWrapper {
-  width: 100vw;
-  padding: $short 4.375rem 60 4.375rem;
   display: grid;
-  grid-template-columns: repeat (3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px 15px 60px 15px;
 
   @include tablet {
-    padding: $short 5.313rem $short 5.313rem;
   }
+  @include desktop {
+    padding: 30px 85px 60px 81px;
+  }
+
   &__title {
     @include title {
       font-size: 1.5rem;
-      padding-top: $short;
       padding-bottom: $tall;
       grid-column: span 3;
     }
@@ -34,18 +36,23 @@
       font-size: 2rem;
     }
   }
-
   .article {
     grid-column: span 3;
     text-align: center;
     padding: 0 4.375rem $tall 4.375rem;
     @include tablet {
       grid-column: span 1;
+      padding: 0 14px 60px 14px;
+      @include desktop {
+        grid-template-columns: repeat(400px);
+        padding: 0 20px 60px 20px;
+      }
     }
 
     &__title {
       @include title {
         font-size: $medium;
+        padding-bottom: 14px;
         &::first-letter {
           text-transform: capitalize;
         }
@@ -63,10 +70,8 @@
     height: 45px;
     border-radius: 22.5px;
     background-color: $orange;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: span 3;
     justify-self: center;
-    margin-bottom: 60px;
     transition: background-color ease 0.5s;
     @include tablet {
       width: 13.125rem;
