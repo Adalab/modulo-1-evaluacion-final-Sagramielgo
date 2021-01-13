@@ -50,3 +50,64 @@
   font-family: $regular;
   margin: 5% 30% 0 30%;
 }
+contact__small {
+  font-size: 12px;
+  color: purple;
+  line-height: 24px;
+  display: block;
+  text-align: center;
+}
+.asterisk {
+  color: pink;
+}
+.world {
+  text-transform: capitalize;
+}
+.welcome {
+  display: block;
+}
+
+.form__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.625rem;
+}
+.signup {
+  display: block;
+  width: 300px;
+  height: 45px;
+  margin: 7px 0 13px;
+  padding: 7px 57px 15px 15px;
+  border: solid 1px purple;
+  border-radius: 20%;
+}
+.required::after {
+  content: "*";
+  color: purple;
+}
+label {
+  width: 131px;
+  height: 19px;
+  margin: 58px 159px 7px 0;
+  font-family: $regular;
+  font-size: 14px;
+  font-weight: normal;
+  color: purple;
+}
+.form_button {
+  width: 150px;
+  height: 45px;
+  margin: 30px 0 60px 0;
+  border-radius: 30%;
+  background-color: pink;
+  color: purple;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form_button:hover {
+  color: $white;
+  background-color: purple;
+}
