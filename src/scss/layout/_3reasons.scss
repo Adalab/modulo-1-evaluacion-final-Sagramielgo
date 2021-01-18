@@ -70,16 +70,17 @@
     grid-column-start: span 3;
     justify-self: center;
     transition: background-color ease 0.5s;
+    &:hover {
+      background-color: $white;
+      border: 2px solid $orange;
+    }
     @include tablet {
       width: 13.125rem;
     }
     @include desktop {
       width: 15.938rem;
     }
-    &:hover {
-      background-color: $white;
-      border: 2px solid $orange;
-    }
+
     &--link {
       font-size: $medium;
       line-height: $tall;
