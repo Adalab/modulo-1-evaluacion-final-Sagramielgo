@@ -46,10 +46,6 @@
     @include tablet {
       font-size: $large;
     }
-
-    &::first-letter {
-      text-transform: capitalize;
-    }
   }
   &__buttom {
     @include buttom {
