@@ -58,7 +58,12 @@
       justify-items: left;
     }
 
-    &__date,
+    &__date {
+      @include tablet {
+        margin-right: 7.2rem;
+      }
+    }
+
     &__love {
       display: block;
       font-size: 0.875rem;
