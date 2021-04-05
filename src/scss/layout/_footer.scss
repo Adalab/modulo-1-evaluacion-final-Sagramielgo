@@ -58,6 +58,9 @@
       justify-items: left;
     }
 
+    .fa-paw {
+      color: cyan;
+    }
     &__date {
       @include tablet {
         margin-right: 7.2rem;
@@ -70,11 +73,6 @@
       line-height: 1.875rem;
       @include tablet {
         text-align: left;
-      }
-
-      .fa-heart {
-        color: $orange;
-        font-size: 0.625rem;
       }
     }
   }
