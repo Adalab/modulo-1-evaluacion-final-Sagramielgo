@@ -43,8 +43,8 @@
     }
   }
   &__buttom {
-    width: 76px;
-    height: 45px;
+    width: 85px;
+    height: 40px;
     border: 2px solid $orange;
     background-color: $white;
     border-radius: 22.5px;
@@ -54,7 +54,7 @@
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     &:hover {
-      background-color: rgb(151, 183, 211);
+      background-color: rgb(188, 211, 231);
     }
 
     @include tablet {
@@ -80,10 +80,15 @@
       display: block;
       color: $orange;
       font-family: $regular;
-      font-size: $medium;
+      font-size: $small;
+      padding-top: 10px;
+      line-height: normal;
       font-weight: 500;
-      line-height: 2.813rem;
       text-align: center;
+      @include desktop {
+        font-size: $medium;
+        padding-top: 6px;
+      }
     }
   }
 }

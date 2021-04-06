@@ -24,15 +24,16 @@
 
 .buttom {
   width: 5rem;
-  border-radius: 30%;
+  border-radius: 10px;
   background-color: fuchsia;
   border: 2px solid white;
   margin: 0 10% 0 80%;
   transition: background-color ease 0.5s;
-}
-.buttom:hover {
-  background-color: $white;
-  border: 2px solid fuchsia;
+
+  &:hover {
+    background-color: $white;
+    border: 2px solid fuchsia;
+  }
 }
 .linky {
   font-size: $medium;
@@ -41,14 +42,16 @@
   color: $white;
   text-align: center;
   display: block;
-}
-.linky:hover {
-  color: fuchsia;
+
+  &:hover {
+    color: fuchsia;
+  }
 }
 .titleForm {
   color: purple;
   font-family: $regular;
-  margin: 5% 30% 0 30%;
+  margin: 5% 0;
+  text-align: center;
 }
 contact__small {
   font-size: 12px;
@@ -81,10 +84,10 @@ contact__small {
   margin: 7px 0 13px;
   padding: 7px 57px 15px 15px;
   border: solid 1px purple;
-  border-radius: 20%;
+  border-radius: 5px;
 }
 .required::after {
-  content: "*";
+  content: '*';
   color: purple;
 }
 label {
@@ -100,11 +103,12 @@ label {
   width: 150px;
   height: 45px;
   margin: 30px 0 60px 0;
-  border-radius: 30%;
+  border-radius: 5px;
   background-color: pink;
   color: purple;
   text-transform: uppercase;
   text-align: center;
+  cursor: pointer;
 }
 
 .form_button:hover {
